@@ -1,0 +1,10 @@
+name: CMDBlocker
+version: '${project.version}'
+main: dev.jay.cmdblocker.CMDBlocker
+api-version: '1.20'
+authors: [jay, qwml]
+description: CMDBlocker for CubeSurvival
+commands:
+  cmdblocker:
+    description: base command for cmd blocker.
+    aliases: [cmdb, blocker, commandblocker]

@@ -1,0 +1,44 @@
+#
+#
+#
+#  CMDBlocker - Block certain commands for players!
+#         for Cubesurvival by qwml / Jay
+#
+#
+#
+
+# Placeholders:-
+# %player% - Player name who sent the command.
+# %cmd% - Log command.
+# %list% - Blocked cmd list.
+
+
+BypassPerm: 'cmdblocker.bypass'
+LogPerm: 'cmdblocker.log'
+OpBypass: true
+Log: true
+
+Plugin:
+  Prefix: '&8[&c&lBlocked&8] '
+
+Messages:
+  Blocked: '&aNice try. This wont work :).'
+  Added: '&cAdded %cmd% to the list!'
+  Removed: '&cRemoved %cmd% from the list!'
+  Log: '%player% has ran command %cmd%'
+
+Errors:
+  NoInputs: '&cYou have provided invalid arguments. Try again.'
+
+BlockedCMDS:
+  - 'pl'
+  - 'plugins'
+  - 'bukkit:pl'
+  - 'ver'
+
+ListFormat:
+  Title: '&7Blocked Commands'
+  List:
+    - ''
+    - '&f%list%'
+    - ''
